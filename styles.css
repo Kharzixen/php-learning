@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+html {
+    overscroll-behavior-y: none;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+html {
+    overscroll-behavior-y: none;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Ensure the container takes up the full viewport height */
+    width: 100vw;  /* Ensure the container takes up the full viewport width */
+}
+
+.sidebar {
+    width: 250px; /* Fixed width for the sidebar */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 100vh; /* Full height for the sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    overflow-y: auto; /* Allows scrolling within the sidebar if needed */
+}
+
+.main-content {
+    flex: 1; /* Fills the remaining space after the sidebar */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden; /* Prevents overflow */
+}
+
+.table-container {
+    flex: 1;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%; /* Ensure the table container takes up all the remaining height */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures even distribution of columns */
+    border: 1px solid black; /* Add border to the table itself */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    overflow-wrap: break-word; /* Prevents overflow of text */
+    word-wrap: break-word; /* Support for older browsers */
+    border: 1px solid black; /* Ensure that the borders for table cells are visible */
+}
+
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.logout-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+
+.button-row {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    justify-content: flex-start; /* Align items to the start of the container */
+    align-items: center; /* Align items vertically in the center */
+    gap: 20px; /* Optional: add space between items */
+}
+
+.custom-button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 150px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.custom-button:hover {
+    background-color: #575757;
+}
+
+
+
+.semaphore {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.semaphore-red {
+    background-color: red;
+}
+
+.semaphore-green {
+    background-color: green;
+}
